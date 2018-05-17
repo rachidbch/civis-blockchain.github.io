@@ -180,6 +180,12 @@ b, strong {
 .mb-20 {
   margin-bottom: 10rem !important; }
 
+@media (min-width: 576px) {
+  .ml-md-10 {
+    margin-left: 5rem !important; }
+  .mr-md-10 {
+    margin-right: 5rem !important; } }
+
 @media (min-width: 992px) {
   .pt-lg-20 {
     padding-top: 10rem !important; }
@@ -279,7 +285,24 @@ b, strong {
 .navbar {
   -webkit-box-shadow: 0 8px 16px 0 rgba(82, 97, 115, 0.18);
   -moz-box-shadow: 0 8px 16px 0 rgba(82, 97, 115, 0.18);
-  box-shadow: 0 8px 16px 0 rgba(82, 97, 115, 0.18); }
+  box-shadow: 0 8px 16px 0 rgba(82, 97, 115, 0.18);
+  padding: 0.2rem 1rem; }
+  .navbar li {
+    margin-left: auto; }
+  .navbar a {
+    color: white !important; }
+  .navbar .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+  .navbar .custom-toggler.navbar-toggler {
+    border-color: white; }
+
+@media (max-width: 576px) {
+  .navbar {
+    background-color: #00796B;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 42; } }
 
 .coolBeans {
   width: fit-content;
@@ -422,81 +445,74 @@ b, strong {
   background-position: top;
   background-repeat: no-repeat;
   background-image: url(../img/Shapes/Background/montagne.png); }
-
-.icon-hover {
-  transition: all .4s ease-in-out; }
-  .icon-hover:hover {
-    transform: scale(1.05); }
-
-form {
-  position: relative;
-  width: 550px;
-  height: 80px;
-  max-width: 100%; }
-
-input {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  border: 0;
-  border-radius: 5px;
-  background: #ffffff70;
-  outline: 0;
-  padding: 2em 1em 1em 1em;
-  color: #fff;
-  transition: background 0.35s ease-out; }
-  input::-webkit-input-placeholder {
+  #footer .icon-hover {
+    transition: all .4s ease-in-out; }
+    #footer .icon-hover:hover {
+      transform: scale(1.05); }
+  #footer form {
+    position: relative;
+    width: 550px;
+    height: 80px;
+    max-width: 100%; }
+  #footer input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border: 0;
+    border-radius: 5px;
+    background: #ffffff70;
+    outline: 0;
+    padding: 2em 1em 1em 1em;
     color: #fff;
-    text-transform: capitalize; }
-  input:-moz-placeholder {
+    transition: background 0.35s ease-out; }
+    #footer input::-webkit-input-placeholder {
+      color: #fff;
+      text-transform: capitalize; }
+    #footer input:-moz-placeholder {
+      color: #fff;
+      text-transform: capitalize; }
+    #footer input::-moz-placeholder {
+      color: #fff;
+      text-transform: capitalize; }
+    #footer input:-ms-input-placeholder {
+      color: #fff;
+      text-transform: capitalize; }
+    #footer input:focus {
+      background: #FFCC80; }
+    #footer input:focus + label {
+      transform: translateY(-1.3rem) scale(0.8); }
+      #footer input:focus + label + button {
+        opacity: 1; }
+  #footer label {
+    position: absolute;
+    left: 1em;
+    top: 50%;
+    margin-top: -8px;
     color: #fff;
-    text-transform: capitalize; }
-  input::-moz-placeholder {
-    color: #fff;
-    text-transform: capitalize; }
-  input:-ms-input-placeholder {
-    color: #fff;
-    text-transform: capitalize; }
-  input:focus {
-    background: #FFCC80; }
-  input:focus + label {
-    transform: translateY(-1.3rem) scale(0.8); }
-    input:focus + label + button {
-      opacity: 1; }
-
-label {
-  position: absolute;
-  left: 1em;
-  top: 50%;
-  margin-top: -8px;
-  color: #fff;
-  text-transform: capitalize;
-  transform-origin: left center;
-  transition: transform 0.25s ease-out, color 0.25s ease-out; }
-
-button {
-  position: absolute;
-  right: 0;
-  width: 120px;
-  height: 100%;
-  border: 0;
-  border-radius: 4px;
-  font-size: 1em;
-  background: #FFCC80;
-  color: #ffffff70;
-  cursor: pointer;
-  opacity: 0;
-  outline: none;
-  transition: opacity 0.35s ease-out, width 0.5s ease-out, background 0.25s ease-out; }
-
-button.is-active {
-  background: #F57C00;
-  color: #fff; }
-
-button.is-done {
-  width: 100%;
-  opacity: 1; }
+    text-transform: capitalize;
+    transform-origin: left center;
+    transition: transform 0.25s ease-out, color 0.25s ease-out; }
+  #footer button {
+    position: absolute;
+    right: 0;
+    width: 120px;
+    height: 100%;
+    border: 0;
+    border-radius: 4px;
+    font-size: 1em;
+    background: #FFCC80;
+    color: #ffffff70;
+    cursor: pointer;
+    opacity: 0;
+    outline: none;
+    transition: opacity 0.35s ease-out, width 0.5s ease-out, background 0.25s ease-out; }
+  #footer button.is-active {
+    background: #F57C00;
+    color: #fff; }
+  #footer button.is-done {
+    width: 100%;
+    opacity: 1; }
 
 footer {
   background-color: #204d73;
