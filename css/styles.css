@@ -333,10 +333,13 @@ b, strong {
   background-repeat: no-repeat; }
 
 #study-cases {
-  background-size: contain;
-  background-position: top;
+  background-size: cover;
+  background-position: center top;
   background-repeat: no-repeat;
   background-image: url(../img/Shapes/Background/diamond.png); }
+  @media (min-width: 992px) {
+    #study-cases {
+      background-size: contain; } }
   #study-cases .cases-tabs {
     display: -webkit-box;
     display: -ms-flexbox;
