@@ -165,6 +165,12 @@ b, strong {
 .mt-10 {
   margin-top: 5rem !important; }
 
+.ml-10 {
+  margin-left: 5rem !important; }
+
+.mr-10 {
+  margin-right: 5rem !important; }
+
 .mb-10 {
   margin-bottom: 5rem !important; }
 
@@ -176,7 +182,11 @@ b, strong {
 
 @media (min-width: 992px) {
   .pt-lg-20 {
-    padding-top: 10rem !important; } }
+    padding-top: 10rem !important; }
+  .m-lg-0 {
+    margin: 0 !important; }
+  .ml-lg-0 {
+    margin-left: 0 !important; } }
 
 @media (min-width: 1500px) {
   .pt-xl-10 {
@@ -291,11 +301,13 @@ b, strong {
   background-repeat: no-repeat; }
   .jumbotron-fluid .smartcity {
     padding-top: 52px !important; }
-  .jumbotron-fluid .soutien .img-fluid {
-    max-width: 50%; }
 
 .symbol-user {
   height: 1.25em; }
+
+.container-blockSCIC {
+  padding-right: 0;
+  padding-left: 0; }
 
 .blockchain {
   background-image: url(../img/Shapes/Triangle/left.png);
@@ -337,50 +349,52 @@ b, strong {
     justify-content: flex-start;
     margin-top: 1.5rem;
     margin-bottom: 1rem; }
-    #study-cases .cases-tabs .nav-pills .nav-link {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      height: 8rem;
-      width: 8rem;
-      margin-bottom: .25rem;
-      padding-right: .5rem;
-      padding-left: .5rem;
-      border-radius: .5rem;
-      -webkit-box-shadow: -3px 3px 3px 0 rgba(0, 0, 0, 0.1);
-      box-shadow: -3px 3px 3px 0 rgba(0, 0, 0, 0.1);
-      background-color: #ffffffc2; }
-      #study-cases .cases-tabs .nav-pills .nav-link:before {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 100%;
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat; }
-    #study-cases .cases-tabs .nav-pills .nav-link.active {
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1);
-      background-color: #fff;
-      z-index: 1; }
-    #study-cases .cases-tabs .nav-pills .reseauRoutier.active:before {
-      background-image: url(../img/Cases/reseau_routier.png); }
-    #study-cases .cases-tabs .nav-pills .reseauRoutier:before {
-      background-image: url(../img/Cases/reseau_routier-bw.png); }
-    #study-cases .cases-tabs .nav-pills .domiciliation.active:before {
-      background-image: url(../img/Cases/domiciliation.png); }
-    #study-cases .cases-tabs .nav-pills .domiciliation:before {
-      background-image: url(../img/Cases/domiciliation-bw.png); }
-    #study-cases .cases-tabs .nav-pills .implicationCitoyenne.active:before {
-      background-image: url(../img/Cases/implication_citoyenne.png); }
-    #study-cases .cases-tabs .nav-pills .implicationCitoyenne:before {
-      background-image: url(../img/Cases/implication_citoyenne-bw.png); }
+    #study-cases .cases-tabs .nav-pills {
+      max-width: 100%; }
+      #study-cases .cases-tabs .nav-pills .nav-link {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        height: 8rem;
+        width: 8rem;
+        margin-bottom: .25rem;
+        padding-right: .5rem;
+        padding-left: .5rem;
+        border-radius: .5rem;
+        -webkit-box-shadow: -3px 3px 3px 0 rgba(0, 0, 0, 0.1);
+        box-shadow: -3px 3px 3px 0 rgba(0, 0, 0, 0.1);
+        background-color: #ffffffc2; }
+        #study-cases .cases-tabs .nav-pills .nav-link:before {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat; }
+      #study-cases .cases-tabs .nav-pills .nav-link.active {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        background-color: #fff;
+        z-index: 1; }
+      #study-cases .cases-tabs .nav-pills .reseauRoutier.active:before {
+        background-image: url(../img/Cases/reseau_routier.png); }
+      #study-cases .cases-tabs .nav-pills .reseauRoutier:before {
+        background-image: url(../img/Cases/reseau_routier-bw.png); }
+      #study-cases .cases-tabs .nav-pills .domiciliation.active:before {
+        background-image: url(../img/Cases/domiciliation.png); }
+      #study-cases .cases-tabs .nav-pills .domiciliation:before {
+        background-image: url(../img/Cases/domiciliation-bw.png); }
+      #study-cases .cases-tabs .nav-pills .implicationCitoyenne.active:before {
+        background-image: url(../img/Cases/implication_citoyenne.png); }
+      #study-cases .cases-tabs .nav-pills .implicationCitoyenne:before {
+        background-image: url(../img/Cases/implication_citoyenne-bw.png); }
     #study-cases .cases-tabs .tab-content {
       width: 100%;
       padding: 2rem 2rem 0;
