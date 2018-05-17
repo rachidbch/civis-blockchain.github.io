@@ -184,7 +184,11 @@ b, strong {
   .ml-md-10 {
     margin-left: 5rem !important; }
   .mr-md-10 {
-    margin-right: 5rem !important; } }
+    margin-right: 5rem !important; }
+  .mt-md-10 {
+    margin-top: 5rem !important; }
+  .pb-md-0 {
+    padding-bottom: 0 !important; } }
 
 @media (min-width: 992px) {
   .pt-lg-20 {
