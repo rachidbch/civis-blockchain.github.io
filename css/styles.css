@@ -109,9 +109,13 @@ b, strong {
   text-decoration: underline;
   text-decoration-color: #EADF63; }
 
-.primary-underline {
+.primaryLight-underline {
   text-decoration: underline;
   text-decoration-color: #00796B; }
+
+.thirdLightest-underline {
+  text-decoration: underline;
+  text-decoration-color: #FFCC80; }
 
 .color-primary {
   color: #004D40 !important; }
@@ -295,6 +299,8 @@ b, strong {
     margin-left: auto; }
   .navbar a {
     color: white !important; }
+    .navbar a:hover {
+      color: #FFCC80 !important; }
   .navbar .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
   .navbar .custom-toggler.navbar-toggler {
@@ -328,6 +334,12 @@ b, strong {
   background-repeat: no-repeat; }
   .jumbotron-fluid .smartcity {
     padding-top: 52px !important; }
+
+.desc {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: justify; }
 
 .symbol-user {
   height: 1.25em; }
