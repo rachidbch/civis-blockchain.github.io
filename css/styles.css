@@ -33,7 +33,7 @@ html,
 body {
   font-size: 16px !important;
   font-weight: 300 !important;
-  font-family: Avenir; }
+  font-family: Ubuntu, Avenir; }
 
 .display-4 {
   font-size: 2.5rem;
@@ -101,6 +101,9 @@ h6, .h6 {
     font-weight: 300 !important; }
   .contact-infos {
     font-size: 2rem; } }
+
+::selection {
+  background-color: #F57C00; }
 
 b, strong {
   font-weight: bold; }
@@ -256,9 +259,9 @@ b, strong {
   border-color: #E65100; }
 
 .btn-primaryGradient {
-  color: #004D40;
-  background-color: #ECEFF1;
-  border-color: #ECEFF1; }
+  color: #fff;
+  background: linear-gradient(225deg, #80CBC4, #00796B);
+  border: none; }
 
 .btn-primaryGradient:hover {
   color: #fff;
@@ -316,6 +319,7 @@ b, strong {
 
 .coolBeans {
   width: fit-content;
+  width: -moz-fit-content;
   border-radius: 2rem;
   transition: all 0.8s ease;
   margin-right: 1em; }
