@@ -99,6 +99,19 @@
           <p class="h3 color-white">
             Une innovation technologique et juridique indispensable
           </p>
+          <div class='cta color-white mt-4'>
+            <span>Téléchargez notre Livre Blanc</span>
+            <form id="formWP" action="https://formspree.io/noreply@civis-blockchain.org" method="POST" target="_blank">
+              <div class='inputWP'>
+                <input type="hidden" name="_next" value="https://github.com/civis-blockchain/white-paper/blob/master/livre-blanc-civis-blockchain.pdf" />
+                <input id="emailWP" placeholder='E-mail' name="_replyTo">
+              </div>
+              <div class='button'>
+                <button disabled='disabled' type='submit'>Accéder</button>
+              </div>
+            </form>
+            <a class="direct hidden text-left pl-3" href="https://github.com/civis-blockchain/white-paper/blob/master/livre-blanc-civis-blockchain.pdf">Ou accéder directement ici</a>
+          </div>
           <!-- <a class="nav-link btn btn-primaryGradient coolBeans text-left ml-md-3 mt-3 p-3 pl-5 pr-5" href="#contact">Téléchargez notre Livre Blanc</a> -->
           <!-- <a class="nav-link btn color-white text-left pl-5 ml-4" href="#contact">Téléchargez notre Pager</a> -->
           <!-- <div class="col-lg-10 ml-auto mr-auto d-flex flex-row mt-5"> -->
@@ -121,18 +134,18 @@
             <p class="h3 color-white color-lg-grey pb-3 pt-5 pt-lg-0"> Avec le soutien de : </p>
           </div>
           <div class="text-right pb-4">
-            <img src="./img/partner/ChainOps.png" class="img-fluid pr-3" alt="ChainOps soutient civis-blockchain"></img>
+            <img src="./img/partner/chainHero.png" class="img-fluid pr-5" alt="Chain Hero soutient civis-blockchain"></img>
             <img src="./img/partner/OpenFlow.png" class="img-fluid pr-3" alt="OpenFlow soutient civis-blockchain"></img>
           </div>
-          <div class="text-right pb-4">
+          <div class="text-center pb-4">
             <img src="./img/partner/synox.png" class="img-fluid" alt="Synox soutient civis-blockchain"></img>
             <!-- <img src="./img/partner/cs.png" class="img-fluid pr-3" alt="CS soutient civis-blockchain"></img> -->
             <!-- <img src="./img/partner/vinci.png" class="img-fluid pr-3" alt="Vinci soutien civis-blockchain"></img> -->
             <!-- <img src="./img/partner/orange.png" class="img-fluid" alt="Orange soutien civis-blockchain"></img> -->
           </div>
           <div class="text-right">
-            <img src="./img/partner/chainHero.png" class="img-fluid pr-5" alt="Chain Hero soutient civis-blockchain"></img>
-            <img src="./img/partner/PlayItOpen.png" class="img-fluid pr-5" alt="PlayItOpen soutient civis-blockchain"></img>
+            <img src="./img/partner/ChainOps.png" class="img-fluid pr-5" alt="ChainOps soutient civis-blockchain"></img>
+            <img src="./img/partner/PlayItOpen.png" class="img-fluid pr-3" alt="PlayItOpen soutient civis-blockchain"></img>
             <!-- <img src="./img/partner/montpellier.png" class="img-fluid pr-3" alt="Montpellier soutien civis-blockchain"></img> -->
           </div>
         </div>
@@ -579,6 +592,38 @@
     </div>
   </div>
 </div>
+
+
+<script>
+// Design / Dribbble by:
+// Oleg Frolov
+// URL: https://dribbble.com/shots/3072293-Notify-me
+
+$(".cta span").click(function(){
+    $(".cta:not(.sent)").addClass("active");
+    $(".cta .direct").removeClass('hidden');
+    $(".inputWP").focus();
+});
+
+var regex = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+
+$("#emailWP").on('input', function(){
+    if(regex.test($(this).val())) {
+        $("button").removeAttr("disabled");
+      }
+    else {
+        $("button").attr("disabled", "disabled"); }
+});
+
+$("#formWP").submit(function(x){
+    // x.preventDefault();
+    if(regex.test($("#emailWP").val())) {
+        $(".cta span").text("Merci pour votre intérêt");
+        $(".cta").removeClass("active").addClass("sent");
+    }
+});
+</script>
+
 
     <script>
     var email = document.getElementById('email'),
