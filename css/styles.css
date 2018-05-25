@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media (min-width: 1200px) {
   .container {
     max-width: 80%; } }
@@ -370,6 +371,37 @@ b, strong {
     opacity: 1;
     transform: scale(1); } }
 
+.slideshowcontainer:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: -webkit-gradient(linear, right top, left top, color-stop(5%, white), color-stop(transparent), color-stop(95%, white));
+  background: linear-gradient(-90deg, white 5%, transparent, white 95%); }
+
+.slideshowcontainer .slideshow {
+  z-index: -1;
+  margin-top: 4rem;
+  display: block;
+  position: relative;
+  overflow: visible;
+  width: 7262px;
+  height: 100px;
+  -webkit-animation-name: slideshow;
+  animation-name: slideshow;
+  -webkit-animation-duration: 120s;
+  animation-duration: 120s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  will-change: transform; }
+
+.slideshowcontainer .l1 {
+  background: url(./img/membres/AntoineChabert.png) -200px 0 no-repeat, url(./img/membres/AntoineChabert.png) 185px 0 no-repeat, url(./img/membres/AntoineChabert.png) 384px 0 no-repeat, url(./img/membres/AntoineChabert.png) 702px 0 no-repeat, url(./img/membres/AntoineChabert.png) 898px 0 no-repeat, url(./img/membres/AntoineChabert.png) 1166px 0 no-repeat, url(./img/membres/AntoineChabert.png) 1501px 0 no-repeat, url(./img/membres/AntoineChabert.png) 1694px 0 no-repeat, url(./img/membres/AntoineChabert.png) 1999px 0 no-repeat, url(./img/membres/AntoineChabert.png) 2255px 0 no-repeat, url(./img/membres/AntoineChabert.png) 2481px 0 no-repeat, url(./img/membres/AntoineChabert.png) 2796px 0 no-repeat, url(./img/membres/AntoineChabert.png) 3009px 0 no-repeat, url(./img/membres/AntoineChabert.png) 3211px 0 no-repeat, url(./img/membres/AntoineChabert.png) 3400px 0 no-repeat, url(./img/membres/AntoineChabert.png) 3785px 0 no-repeat, url(./img/membres/AntoineChabert.png) 3984px 0 no-repeat, url(./img/membres/AntoineChabert.png) 4302px 0 no-repeat, url(./img/membres/AntoineChabert.png) 4498px 0 no-repeat, url(./img/membres/AntoineChabert.png) 4766px 0 no-repeat, url(./img/membres/AntoineChabert.png) 5101px 0 no-repeat, url(./img/membres/AntoineChabert.png) 5294px 0 no-repeat, url(./img/membres/AntoineChabert.png) 5599px 0 no-repeat, url(./img/membres/AntoineChabert.png) 5855px 0 no-repeat, url(./img/membres/AntoineChabert.png) 6081px 0 no-repeat, url(./img/membres/AntoineChabert.png) 6396px 0 no-repeat, url(./img/membres/AntoineChabert.png) 6609px 0 no-repeat, url(./img/membres/AntoineChabert.png) 6811px 0 no-repeat; }
+
 .row {
   margin: 0; }
 
@@ -617,3 +649,55 @@ b, strong {
 footer {
   background-color: #204d73;
   color: white; }
+
+.team {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), color-stop(51%, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.9)));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0.9)); }
+
+.slideshowContainer {
+  max-width: 1366px;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+  transform: translate3d(0, 0, 0); }
+  .slideshowContainer:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: -webkit-gradient(linear, right top, left top, color-stop(5%, white), color-stop(transparent), color-stop(95%, white));
+    background: linear-gradient(-90deg, white 5%, transparent, white 95%); }
+
+.slideshow {
+  z-index: -1;
+  display: block;
+  position: relative;
+  overflow: visible;
+  width: 7862px;
+  height: 100px;
+  transform: translate3d(0, 0, 0); }
+
+.l1 {
+  animation: moveSlideshow 120s linear infinite;
+  background: url(./../img/membres/AntoineChabert.png) -800px 0 no-repeat, url(./../img/membres/AssiaTria.png) -485px 0 no-repeat, url(./../img/membres/AurelieBayle.png) -224px 0 no-repeat, url(./../img/membres/EricThomas.png) 142px 0 no-repeat, url(./../img/membres/FredericCombe.png) 434px 0 no-repeat, url(./../img/membres/GeraldineMauduit.png) 820px 0 no-repeat, url(./../img/membres/JeremieFrançois.png) 1261px 0 no-repeat, url(./../img/membres/JulienDelcroix.png) 1654px 0 no-repeat, url(./../img/membres/JulienLeconte.png) 2009px 0 no-repeat, url(./../img/membres/KlaraSok.png) 2355px 0 no-repeat, url(./../img/membres/LucYriarte.png) 2586px 0 no-repeat, url(./../img/membres/MagalieMerle.png) 2656px 0 no-repeat, url(./../img/membres/MathieuPesin.png) 3199px 0 no-repeat, url(./../img/membres/MickaelOllier.png) 3546px 0 no-repeat, url(./../img/membres/MyriamCriquet.png) 3875px 0 no-repeat, url(./../img/membres/NicolasHersog.png) 4250px 0 no-repeat, url(./../img/membres/PascalArnoux.png) 4604px 0 no-repeat, url(./../img/membres/RheimsCyril.png) 4942px 0 no-repeat, url(./../img/membres/SebastienGriffon.png) 5248px 0 no-repeat, url(./../img/membres/ThibaultChazal.png) 4656px 0 no-repeat, url(./../img/membres/ThomasChalmeton.png) 6031px 0 no-repeat, url(./../img/membres/ZinedineHasni.png) 6500px 0 no-repeat, url(./../img/membres/ZokamaSakanga.png) 6859px 0 no-repeat; }
+
+.l2 {
+  animation: moveSlideshow 120s linear infinite;
+  background-position: 0 -400px;
+  background: url(./../img/membres/AntoineChabert.png) 200px 0 no-repeat, url(./../img/membres/AssiaTria.png) 585px 0 no-repeat, url(./../img/membres/AurelieBayle.png) 824px 0 no-repeat, url(./../img/membres/EricThomas.png) 1142px 0 no-repeat, url(./../img/membres/FredericCombe.png) 1434px 0 no-repeat, url(./../img/membres/GeraldineMauduit.png) 1820px 0 no-repeat, url(./../img/membres/JeremieFrançois.png) 2261px 0 no-repeat, url(./../img/membres/JulienDelcroix.png) 2654px 0 no-repeat, url(./../img/membres/JulienLeconte.png) 3009px 0 no-repeat, url(./../img/membres/KlaraSok.png) 3355px 0 no-repeat, url(./../img/membres/LucYriarte.png) 3586px 0 no-repeat, url(./../img/membres/MagalieMerle.png) 3956px 0 no-repeat, url(./../img/membres/MathieuPesin.png) 4199px 0 no-repeat, url(./../img/membres/MickaelOllier.png) 4546px 0 no-repeat, url(./../img/membres/MyriamCriquet.png) 4975px 0 no-repeat, url(./../img/membres/NicolasHersog.png) 5250px 0 no-repeat, url(./../img/membres/PascalArnoux.png) 5604px 0 no-repeat, url(./../img/membres/RheimsCyril.png) 5942px 0 no-repeat, url(./../img/membres/SebastienGriffon.png) 6248px 0 no-repeat, url(./../img/membres/ThibaultChazal.png) 6656px 0 no-repeat, url(./../img/membres/ThomasChalmeton.png) 7031px 0 no-repeat, url(./../img/membres/ZinedineHasni.png) 7500px 0 no-repeat, url(./../img/membres/ZokamaSakanga.png) 7959px 0 no-repeat; }
+
+.l3 {
+  animation: moveSlideshow 120s linear infinite;
+  background-position: 0 -800px;
+  background: url(./../img/membres/AntoineChabert.png) -2000px 0 no-repeat, url(./../img/membres/AssiaTria.png) -1785px 0 no-repeat, url(./../img/membres/AurelieBayle.png) -1424px 0 no-repeat, url(./../img/membres/EricThomas.png) -1142px 0 no-repeat, url(./../img/membres/FredericCombe.png) -834px 0 no-repeat, url(./../img/membres/GeraldineMauduit.png) -220px 0 no-repeat, url(./../img/membres/JeremieFrançois.png) 61px 0 no-repeat, url(./../img/membres/JulienDelcroix.png) 454px 0 no-repeat, url(./../img/membres/JulienLeconte.png) 809px 0 no-repeat, url(./../img/membres/KlaraSok.png) 1155px 0 no-repeat, url(./../img/membres/LucYriarte.png) 1386px 0 no-repeat, url(./../img/membres/MagalieMerle.png) 1656px 0 no-repeat, url(./../img/membres/MathieuPesin.png) 1999px 0 no-repeat, url(./../img/membres/MickaelOllier.png) 2346px 0 no-repeat, url(./../img/membres/MyriamCriquet.png) 2675px 0 no-repeat, url(./../img/membres/NicolasHersog.png) 3050px 0 no-repeat, url(./../img/membres/PascalArnoux.png) 3404px 0 no-repeat, url(./../img/membres/RheimsCyril.png) 3742px 0 no-repeat, url(./../img/membres/SebastienGriffon.png) 4048px 0 no-repeat, url(./../img/membres/ThibaultChazal.png) 4456px 0 no-repeat, url(./../img/membres/ThomasChalmeton.png) 4831px 0 no-repeat, url(./../img/membres/ZinedineHasni.png) 5300px 0 no-repeat, url(./../img/membres/ZokamaSakanga.png) 5659px 0 no-repeat; }
+
+@keyframes moveSlideshow {
+  100% {
+    transform: translateX(-80%); } }
