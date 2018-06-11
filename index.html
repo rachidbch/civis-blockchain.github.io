@@ -104,7 +104,9 @@
             <form id="formWP" action="https://formspree.io/noreply@civis-blockchain.org" method="POST" target="_blank">
               <div class='inputWP'>
                 <input type="hidden" name="_next" value="http://chain-ops.com/wp-content/uploads/2018/05/livre-blanc-civis-blockchain.pdf" />
-                <input id="emailWP" placeholder='E-mail' name="_replyTo">
+                <!-- <input id="emailWP" placeholder='E-mail' name="_replyTo"> -->
+                <input type="email" id="email" name="email"/>
+                <label for="email" name="_replyTo">Votre E-mail</label>
               </div>
               <div class='button'>
                 <button disabled='disabled' type='submit'>Accéder</button>
